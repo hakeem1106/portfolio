@@ -1,4 +1,6 @@
-$("span").fadeIn();
+
+$("welcome").hide();
+$("welcome").fadeIn("easing");
 
 
 
