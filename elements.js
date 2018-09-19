@@ -1,5 +1,5 @@
 
-$("welcome").hide();
+$("h1").hide();
 $("welcome").fadeIn("easing");
 
 
