@@ -1,13 +1,5 @@
-function pageFade() {
+function pageFade(document) {
     $("welcome").hide();
     $("welcome").fadeIn("easing");
-
-}
-
-
-function animateName(){
-}
-
-function appBuild(){
 
 }
