@@ -1,7 +1,8 @@
+function pageFade() {
+    $("welcome").hide();
+    $("welcome").fadeIn("easing");
 
-$("h1").hide();
-$("welcome").fadeIn("easing");
-
+}
 
 
 function animateName(){
