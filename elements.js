@@ -1,4 +1,4 @@
-function pageFade(document) {
+function pageFade() {
     $("welcome").hide();
     $("welcome").fadeIn("easing");
 
