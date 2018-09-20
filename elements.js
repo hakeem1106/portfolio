@@ -1,6 +1,8 @@
 import $ from 'jquery'
 
-$(document).ready(welcomePage(){
-    $('#welcome').hide();
-    $("#welcome").fadeIn("ease");
-});
+$(document).ready(welcomePage(), {
+    $('#welcome') {
+        hide();
+        $('#welcome'); {
+            fadeIn("ease");
+        });
