@@ -1,9 +1,11 @@
+import $ from 'jquery'
+window.jQuery = JQuery
+
 newFunction();
 
 function newFunction() {
-    $pageFade();
-    {
-        $("welcome").hide();
-        $("welcome").fadeIn("easing");
-    }
+    $(document).ready(welcomePage(), {
+        $("body") { }, hide();,
+        $("body") { }, fadeIn();
+    });
 }
