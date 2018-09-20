@@ -1,5 +1,5 @@
 var map;
 
 function portfolioMap() {
-    map = new.maps.Map(document.getElementById('app'))
+    map = new google.maps.Map(document.getElementById('app'))
 }
