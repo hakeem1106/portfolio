@@ -1,5 +1,4 @@
 import $ from 'jquery'
-window.jQuery = JQuery
 
 newFunction();
 
