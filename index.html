@@ -22,21 +22,21 @@
 
         
     </div>
-    
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOlLDr1xtUwDU0oTSTEBxlEBnTO4MhWw0&callback=initMap"
-            async defer></script>
-    <script src="elements.js"></script>
     <script>
 
 
-        function initMap('app') {
+        function initMap() {
             var map = new google.maps.Map(document.getElementById('app'), {
                 center: { lat: -34.397, lng: 150.644 },
                 zoom: 8
             });
         }
     </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOlLDr1xtUwDU0oTSTEBxlEBnTO4MhWw0&callback=initMap"
+            async defer></script>
+    <script src="elements.js"></script>
+    
 
 </body>
 </html>
