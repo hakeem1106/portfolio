@@ -5,7 +5,7 @@ function yourPick(){
 
 var intro = document.getElementById('welcome');
 
-var head = docment.createTextNode("Gerald Bryant: Software Developer");
+var head = document.createTextNode("Gerald Bryant: Software Developer");
 
 intro.appendChild(head);
 
