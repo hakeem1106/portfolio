@@ -13,10 +13,12 @@ intro.appendChild(head);
 
 
     function initMap() {
-        var map = new google.maps.Map(document.getElementById('here'), {
+      var map, infoWindow;
+        map = new google.maps.Map(document.getElementById('here'), {
             center: { lat: -34.397, lng: 150.644 },
             zoom: 8
         });
+        infoWindow = new google.maps.InfoWindow;
     }
     if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
@@ -36,7 +38,7 @@ intro.appendChild(head);
           // Browser doesn't support Geolocation
           handleLocationError(false, infoWindow, map.getCenter());
         }
-      
+
 
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
