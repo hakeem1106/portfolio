@@ -11,16 +11,16 @@ intro.appendChild(head);
 
 }
 
-
+    var map, infoWindow;
     function initMap() {
-      var map, infoWindow;
+
         map = new google.maps.Map(document.getElementById('here'), {
             center: { lat: -34.397, lng: 150.644 },
             zoom: 8
         });
-
+        infoWindow = new google.maps.InfoWindow;
     }
-    infoWindow = new google.maps.InfoWindow;
+
     if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
