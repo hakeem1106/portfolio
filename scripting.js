@@ -1,4 +1,8 @@
+document.body.onload = yourPick;
+
 function yourPick(){
+
+
 var intro = document.getElementById('welcome');
 
 var head = docment.createTextNode("Gerald Bryant: Software Developer");
