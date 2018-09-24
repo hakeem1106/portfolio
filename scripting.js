@@ -1,3 +1,8 @@
+function yourPick(document.getElementById('welcome')){
+
+var head = docment.createTextNode("Gerald Bryant: Software Developer");
+}
+
 
     function initMap() {
         var map = new google.maps.Map(document.getElementById('here'), {
