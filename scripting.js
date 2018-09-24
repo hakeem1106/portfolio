@@ -1,6 +1,10 @@
-function yourPick(document.getElementById('welcome')){
+function yourPick(){
+var intro = document.getElementById('welcome');
 
 var head = docment.createTextNode("Gerald Bryant: Software Developer");
+
+intro.appendChild(head);
+
 }
 
 
