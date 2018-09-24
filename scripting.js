@@ -18,8 +18,9 @@ intro.appendChild(head);
             center: { lat: -34.397, lng: 150.644 },
             zoom: 8
         });
-        infoWindow = new google.maps.InfoWindow;
+
     }
+    infoWindow = new google.maps.InfoWindow;
     if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
