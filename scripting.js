@@ -31,7 +31,7 @@ intro.appendChild(head);
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('formatted_address');
+            infoWindow.setContent(pos.formatted_address);
             infoWindow.open(map);
             map.setCenter(pos);
           }, function() {
@@ -58,7 +58,7 @@ intro.appendChild(head);
       if (results[0]) {
         map.setZoom(11);
         var marker = new google.maps.Marker({
-          position: latlng,
+          position: pos,
           map: map
         });
 
