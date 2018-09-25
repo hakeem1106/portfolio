@@ -17,7 +17,7 @@ intro.appendChild(head);
     function initMap() {
 
         map = new google.maps.Map(document.getElementById('here'), {
-            center: { lat: -34.397, lng: 150.644 },
+            center: { navigator.geolocation.getCurrentPosition },
             zoom: 8
         });
         infoWindow = new google.maps.InfoWindow;
@@ -28,7 +28,9 @@ intro.appendChild(head);
             var pos = {
               lat: position.coords.latitude,
               lng: position.coords.longitude
+
             };
+
 
             infoWindow.setPosition(pos);
             infoWindow.setContent(pos.formatted_address);
@@ -50,25 +52,3 @@ intro.appendChild(head);
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
       }
-
-      function geocodeLatLng(geocoder, map, infoWindow) {
-        var geocoder = new google.maps.Geocoder;
-        geocoder.geocode({'location': pos}, function(results, status) {
-    if (status === 'OK') {
-      if (results[0]) {
-        map.setZoom(11);
-        var marker = new google.maps.Marker({
-          position: pos,
-          map: map
-        });
-
-        infoWindow.setContent(results[0].formatted_address);
-          infoWindow.open(map, marker);
-        } else {
-          window.alert('No results found');
-        }
-      } else {
-        window.alert('Geocoder failed due to: ' + status);
-      }
-    });
-  }
