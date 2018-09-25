@@ -17,7 +17,7 @@ intro.appendChild(head);
     function initMap() {
 
         map = new google.maps.Map(document.getElementById('here'), {
-            center: { navigator.geolocation.getCurrentPosition },
+            center: { geolocation.getCurrentPosition },
             zoom: 8
         });
         infoWindow = new google.maps.InfoWindow;
