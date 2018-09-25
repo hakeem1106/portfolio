@@ -62,4 +62,11 @@ intro.appendChild(head);
         });
 
         infowindow.setContent(results[0].formatted_address);
-        infowindow.open(map, marker);
+          infowindow.open(map, marker);
+        } else {
+          window.alert('No results found');
+        }
+      } else {
+        window.alert('Geocoder failed due to: ' + status);
+      }
+    });
