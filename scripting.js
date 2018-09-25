@@ -6,7 +6,7 @@ function yourPick(){
 var intro = document.getElementById('welcome');
 
 var head = document.createTextNode("Gerald Bryant: Software Developer");
-head.style.alignItems = "center";
+
 
 intro.appendChild(head);
 
