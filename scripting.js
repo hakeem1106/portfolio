@@ -17,7 +17,7 @@ intro.appendChild(head);
     function initMap() {
 
         map = new google.maps.Map(document.getElementById('here'), {
-            center: { getCurrentPosition },
+            center: { lat: -34.397, lng: 150.644 },
             zoom: 8
         });
         infoWindow = new google.maps.InfoWindow;
@@ -32,8 +32,9 @@ intro.appendChild(head);
             };
 
 
+
             infoWindow.setPosition(pos);
-            infoWindow.setContent(pos.formatted_address);
+            infoWindow.setContent('location');
             infoWindow.open(map);
             map.setCenter(pos);
           }, function() {
