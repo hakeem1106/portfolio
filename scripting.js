@@ -3,7 +3,7 @@ document.body.onload = yourPick;
 function yourPick(){
 
 
-    var intro = document.getElementById('welcome').style.alignContent = "center";
+var intro = document.getElementById('welcome');
 
 var head = document.createTextNode("Gerald Bryant: Software Developer");
 
