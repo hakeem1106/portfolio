@@ -3,9 +3,9 @@ document.body.onload = yourPick;
 function yourPick(){
 
 
-var intro = document.getElementById('welcome');
+    var intro = document.getElementById('welcome').style.alignContent = "center";
 
-var head = document.createTextNode("Gerald Bryant: Software Developer").style.alignItems = "center";
+var head = document.createTextNode("Gerald Bryant: Software Developer");
 
 intro.appendChild(head);
 
