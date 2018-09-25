@@ -31,7 +31,7 @@ intro.appendChild(head);
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent(formatted_address);
+            infoWindow.setContent('formatted_address');
             infoWindow.open(map);
             map.setCenter(pos);
           }, function() {
@@ -53,7 +53,7 @@ intro.appendChild(head);
 
       function geocodeLatLng(geocoder, map, infoWindow) {
         var geocoder = new google.maps.Geocoder;
-        geocoder.geocode({'location': latlng}, function(results, status) {
+        geocoder.geocode({'location': pos}, function(results, status) {
     if (status === 'OK') {
       if (results[0]) {
         map.setZoom(11);
