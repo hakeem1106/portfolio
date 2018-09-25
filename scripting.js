@@ -51,7 +51,7 @@ intro.appendChild(head);
         infoWindow.open(map);
       }
 
-      function geocodeLatLng(geocoder, map, infowindow) {
+      function geocodeLatLng(geocoder, map, infoWindow) {
         var geocoder = new google.maps.Geocoder;
         geocoder.geocode({'location': latlng}, function(results, status) {
     if (status === 'OK') {
@@ -62,8 +62,8 @@ intro.appendChild(head);
           map: map
         });
 
-        infowindow.setContent(results[0].formatted_address);
-          infowindow.open(map, marker);
+        infoWindow.setContent(results[0].formatted_address);
+          infoWindow.open(map, marker);
         } else {
           window.alert('No results found');
         }
