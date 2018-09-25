@@ -13,7 +13,7 @@ intro.appendChild(head);
 }
 
     var map, infoWindow;
-    var geocoder = new google.maps.Geocoder;
+
     function initMap() {
 
         map = new google.maps.Map(document.getElementById('here'), {
@@ -52,7 +52,8 @@ intro.appendChild(head);
       }
 
       function geocodeLatLng(geocoder, map, infowindow) {
-  geocoder.geocode({'location': latlng}, function(results, status) {
+        var geocoder = new google.maps.Geocoder;
+        geocoder.geocode({'location': latlng}, function(results, status) {
     if (status === 'OK') {
       if (results[0]) {
         map.setZoom(11);
