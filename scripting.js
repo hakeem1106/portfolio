@@ -4,6 +4,7 @@ const intro = document.createElement("div");
 const merica = document.getElementById('here');
 const meObject = document.createElement("div");
 const endFoot = document.createElement("footer");
+const map, infoWindow;
 
 function yourPick(){
 var head = document.createTextNode("Gerald Bryant: Software Developer");
@@ -15,14 +16,9 @@ intro.appendChild(head);
 document.body.insertBefore(intro, merica);
 }
 
-function theRest(){
-var describe = document.createTextNode("Thank you for viewing my porfolio. I am an entry-level developer with 3+ years of development experience with HTML, Javascript, PHP, Java and other languages.");
 
-meObject.appendChild(describe);
 
-}
 
-    var map, infoWindow;
 
     function initMap() {
 
@@ -62,4 +58,11 @@ meObject.appendChild(describe);
                               'Error: The Geolocation service failed.' :
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
+      }
+
+      function theRest(){
+      var describe = document.createTextNode("Thank you for viewing my porfolio. I am an entry-level developer with 3+ years of development experience with HTML, Javascript, PHP, Java and other languages.");
+
+      meObject.appendChild(describe);
+
       }
