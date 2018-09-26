@@ -5,10 +5,12 @@ function yourPick(){
 
     var intro = document.createElement("div");
 
-var head = document.createTextNode("Gerald Bryant: Software Developer");
+    var head = document.createTextNode("Gerald Bryant: Software Developer");
 
 
-intro.appendChild(head);
+    intro.appendChild(head);
+
+    document.body.insertBefore(intro, "here");
 
 }
 
