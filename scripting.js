@@ -1,21 +1,14 @@
 document.body.onload = yourPick;
+const intro = document.createElement("div");
+const merica = document.getElementById('here');
 
 function yourPick(){
+var head = document.createTextNode("Gerald Bryant: Software Developer");
+intro.style.alignContent = "center";
+intro.appendChild(head);
 
-
-    var intro = document.createElement("div").style.alignContent = "center";
-    var merica = document.getElementById('here');
-
-    var head = document.createTextNode("Gerald Bryant: Software Developer");
-
-
-
-    intro.appendChild(head);
-
-    document.body.insertBefore(intro, merica);
-
-
-
+document.body.insertBefore(intro, merica);
+    
 }
 
     var map, infoWindow;
