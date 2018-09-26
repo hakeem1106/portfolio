@@ -4,13 +4,15 @@ function yourPick(){
 
 
     var intro = document.createElement("div");
+    var merica = document.getElementById("map");
 
     var head = document.createTextNode("Gerald Bryant: Software Developer");
 
 
+
     intro.appendChild(head);
 
-    document.body.insertBefore(intro, "here");
+    document.body.insertBefore(intro, merica);
 
 }
 
