@@ -20,7 +20,6 @@ var describe = document.createTextNode("Thank you for viewing my porfolio. I am 
 
 meObject.appendChild(describe);
 
-document.body.insertBefore(meObject, endFoot);
 }
 
     var map, infoWindow;
