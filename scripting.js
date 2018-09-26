@@ -14,6 +14,8 @@ function yourPick(){
 
     document.body.insertBefore(intro, merica);
 
+    return intro;
+
 }
 
     var map, infoWindow;
