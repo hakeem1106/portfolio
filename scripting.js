@@ -1,4 +1,4 @@
-document.body.onload = yourPick;
+document.body.onload = yourPick, theRest;
 const intro = document.createElement("div");
 const merica = document.getElementById('here');
 const meObject = document.createElement("div");
@@ -6,15 +6,20 @@ const endFoot = document.createElement("footer");
 
 function yourPick(){
 var head = document.createTextNode("Gerald Bryant: Software Developer");
-var describe = document.createTextNode("Thank you for viewing my porfolio. I am an entry-level developer with 3+ years of develpment experience with HTML, Javascript, PHP, Java and other languages.");
+
 intro.style.alignContent = "center";
 intro.appendChild(head);
-meObject.appendChild(describe);
 
 
 document.body.insertBefore(intro, merica);
-document.body.insertBefore(meObject, endFoot);
+}
 
+function theRest(){
+var describe = document.createTextNode("Thank you for viewing my porfolio. I am an entry-level developer with 3+ years of development experience with HTML, Javascript, PHP, Java and other languages.");
+
+meObject.appendChild(describe);
+
+document.body.insertBefore(meObject, endFoot);
 }
 
     var map, infoWindow;
