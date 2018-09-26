@@ -6,12 +6,8 @@ const meObject = document.createElement("div");
 const endFoot = document.createElement("footer");
 var map, infoWindow;
 
-function yourPick(){
+function yourPick(intro){
 var head = document.createTextNode("Gerald Bryant: Software Developer");
-
-intro.style.alignContent = "center";
-intro.appendChild(head);
-
 
 document.body.insertBefore(intro, merica);
 }
@@ -60,9 +56,9 @@ document.body.insertBefore(intro, merica);
         infoWindow.open(map);
       }
 
-      function theRest(){
-      var describe = document.createTextNode("Thank you for viewing my porfolio. I am an entry-level developer with 3+ years of development experience with HTML, Javascript, PHP, Java and other languages.");
+function theRest(){
+var describe = document.createTextNode("Thank you for viewing my porfolio. I am an entry-level developer with 3+ years of development experience with HTML, Javascript, PHP, Java and other languages.");
 
-      meObject.appendChild(describe);
+meObject.appendChild(describe);
 
-      }
+}
