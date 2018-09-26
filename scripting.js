@@ -4,7 +4,7 @@ const intro = document.createElement("div");
 const merica = document.getElementById('here');
 const meObject = document.createElement("div");
 const endFoot = document.createElement("footer");
-const map, infoWindow;
+var map, infoWindow;
 
 function yourPick(){
 var head = document.createTextNode("Gerald Bryant: Software Developer");
