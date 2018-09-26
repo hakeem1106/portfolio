@@ -3,14 +3,14 @@ document.body.onload = yourPick;
 function yourPick(){
 
 
-    var intro = document.createElement("div").style.alignText = "center";
+    var intro = document.createElement("div");
     var merica = document.getElementById('here');
 
     var head = document.createTextNode("Gerald Bryant: Software Developer");
 
 
 
-    intro.appendChild(head);
+    intro.appendChild(head).style.alignText = "center";
 
     document.body.insertBefore(intro, merica);
 
