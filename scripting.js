@@ -12,7 +12,7 @@ function yourPick(){
 
     intro.appendChild(head);
 
-    document.body.insertBefore(intro, merica);
+    document.body.insertBefore(merica, intro);
 
 }
 
