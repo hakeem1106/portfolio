@@ -1,19 +1,5 @@
-document.body.onload = yourPick;
-const intro = document.createElement("div");
-const merica = document.getElementById('here');
-const meObject = document.createElement("div");
-const endFoot = document.createElement("footer");
+
 var map, infoWindow;
-
-function yourPick(intro){
-var head = document.createTextNode("Gerald Bryant: Software Developer");
-
-document.body.insertBefore(intro, merica);
-}
-
-
-
-
 
     function initMap() {
 
@@ -54,10 +40,3 @@ document.body.insertBefore(intro, merica);
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
       }
-
-function theRest(){
-var describe = document.createTextNode("Thank you for viewing my porfolio. I am an entry-level developer with 3+ years of development experience with HTML, Javascript, PHP, Java and other languages.");
-
-meObject.appendChild(describe);
-
-}
