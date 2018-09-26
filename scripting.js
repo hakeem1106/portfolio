@@ -1,5 +1,4 @@
 document.body.onload = yourPick;
-document.body.onload = theRest;
 const intro = document.createElement("div");
 const merica = document.getElementById('here');
 const meObject = document.createElement("div");
