@@ -6,11 +6,11 @@ function yourPick(){
     var intro = document.createElement("div");
     var merica = document.getElementById('here');
 
-    var head = document.createTextNode("Gerald Bryant: Software Developer");
+    var head = document.createTextNode("Gerald Bryant: Software Developer").style.alignText = "center";
 
 
 
-    intro.appendChild(head).style.alignText = "center";
+    intro.appendChild(head);
 
     document.body.insertBefore(intro, merica);
 
