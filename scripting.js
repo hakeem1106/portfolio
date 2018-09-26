@@ -11,8 +11,9 @@ intro.style.alignContent = "center";
 intro.appendChild(head);
 meObject.appendChild(describe);
 
-document.body.insertBefore(meObject, endFoot);
+
 document.body.insertBefore(intro, merica);
+document.body.insertBefore(meObject, endFoot);
 
 }
 
