@@ -1,13 +1,13 @@
 #here{
   height:375px;
   width: auto;
+  margin: 60px;
 
 }
 
 #hello {
     text-align: center;
     height: 100px;
-    margin: 60px;
     font-weight: 900;
     background-image: url("./images/headBack.jpg");
     
