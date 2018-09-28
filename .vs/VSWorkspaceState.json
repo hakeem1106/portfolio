@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.theia"
+    "\\.theia",
+    "\\images"
   ],
-  "SelectedNode": "\\.theia\\settings.json",
+  "SelectedNode": "\\scripting.js",
   "PreviewInSolutionExplorer": false
 }
