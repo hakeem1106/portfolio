@@ -1,4 +1,4 @@
-import $ from './jquery-ui.min.js';
+import $ from 'jquery;
 
 $(document).ready(function () {
     $("hello").fadeIn("slow");
