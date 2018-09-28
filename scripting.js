@@ -1,4 +1,6 @@
-
+$(document).ready(function () {
+    $("hello").fadeIn("slow");
+});
 var map, infoWindow;
 
     function initMap() {
