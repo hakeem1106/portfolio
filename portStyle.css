@@ -1,13 +1,15 @@
 body {
     background-image: url("./images/niceBack2.jpg");
+    resize: both;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
-
-
-#here{
-  height:375px;
-  width: auto;
-  margin: 60px;
-
+#here {
+    height: 375px;
+    width: auto;
+    margin: 100px;
+    border-radius: 28px;
 }
 
 #hello {
