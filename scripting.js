@@ -1,3 +1,5 @@
+import $ from 'jquery-ui.min.js';
+
 $(document).ready(function () {
     $("hello").fadeIn("slow");
 });
