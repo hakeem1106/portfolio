@@ -6,10 +6,11 @@ body {
     background-size: cover;
 }
 #here {
-    height: 375px;
-    width: auto;
-    margin: 100px;
-    border-radius: 28px;
+  height: 375px;
+  width: 500px;
+  margin:auto;
+  border-radius: 28px;
+
 }
 
 #hello {
@@ -20,4 +21,3 @@ body {
     font-size: xx-large;
     padding-top: 60px;
 }
-
