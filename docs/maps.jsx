@@ -1,3 +1,5 @@
+/* global google */
+
 var map, infoWindow;
 
     function initMap() {
