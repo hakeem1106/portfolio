@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="portStyle.css">
+  <!--    <link rel="stylesheet" href="portStyle.css">-->
   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
@@ -30,6 +30,18 @@
 
     </div>
 
-    <script type='module' src="index.js"></script>
+    <script type="text/babel">
+class Greeting extends React.Component {
+    render() {
+        return (<p>Hello world</p>);
+    }
+}
+ReactDOM.render(
+    <Greeting />,
+    document.getElementById('root')
+);
+</script>
+
+    <!--<script type='module' src="index.js"></script>-->
 </body>
 </html>
