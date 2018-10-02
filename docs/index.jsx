@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-newFunction();
-
-function newFunction() {
-    class App {
+function pageBuilding(){
+    window.onload = function(){
+        class MadeIt extends React.Component{
+            render(){
+                return React.createElement('h1', null, 'MadeIt')
+            }
+        }
     }
-    () => {
-        return (<div className="App">
-            <h1> React Works</h1>
-        </div>);
-    };
-    const rootElement = document.getElementById('root');
-    ReactDOM.render(<App />, rootElement);
-}
+    ReactDOM.render(
+            React.createElement(MadeIt),
+            document.getElementById('root')
+                    
+            );
+};
