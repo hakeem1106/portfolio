@@ -1,5 +1,5 @@
-import React from '/react.production.min.js';
-import ReactDOM from '/react-dom.production.min.js';
+const react = window.React;
+const react = window.ReactDOM;
 
 function pageBuilding(){
     window.onload = function(){
