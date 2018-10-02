@@ -1,5 +1,5 @@
-import React from '../react';
-import ReactDOM from '../react-dom';
+import React from 'react.production.min.js';
+import ReactDOM from 'react-dom.production.min.js';
 
 function pageBuilding(){
     window.onload = function(){
@@ -12,6 +12,6 @@ function pageBuilding(){
     ReactDOM.render(
             React.createElement(MadeIt),
             document.getElementById('root')
-                    
+
             );
 };
