@@ -1,5 +1,5 @@
 const react = window.React;
-const react = window.ReactDOM;
+const reactDOM = window.ReactDOM;
 
 function pageBuilding(){
     window.onload = function(){
