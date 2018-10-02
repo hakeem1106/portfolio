@@ -10,7 +10,7 @@ function pageBuilding(){
         }
     }
     ReactDOM.render(
-            React.createElement(MadeIt),
+            React.createElement('MadeIt'),
             document.getElementById('root')
 
             );
